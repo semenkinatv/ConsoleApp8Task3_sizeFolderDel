@@ -12,7 +12,6 @@ namespace Modul8Task1
             foreach (FileInfo fi in fis)
             { size += fi.Length; }
 
-
             DirectoryInfo[] dis = dir.GetDirectories();
             foreach (DirectoryInfo di in dis)
             { size += DirSize(di.FullName); }
@@ -82,7 +81,7 @@ namespace Modul8Task1
                             delbyteAll += delbyte;
                             Directory.Delete(d, true);
 
-                            Console.Write($"- УДАЛЕНА по истечении 30 мин.");
+                            Console.Write($"- УДАЛЕНА.");
                         }
                         Console.WriteLine();
                     }
